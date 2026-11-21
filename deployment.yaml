@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/inesmo-minyard/capstone-app:0.2.1
+          image: ghcr.io/inesmo-minyard/capstone-app:0.2.2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
