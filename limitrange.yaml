@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: app-manual-defaults
+  namespace: app-manual
+spec:
+  limits:
+    - type: Container
+      defaultRequest:
+        cpu: 20m
+        memory: 32Mi
+      default:
+        cpu: 200m
+        memory: 64Mi
+      max:
+        cpu: 500m
+        memory: 256Mi
